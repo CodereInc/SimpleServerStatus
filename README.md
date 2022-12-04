@@ -30,7 +30,29 @@ url = "YOUR_API_URL"
 然后在终端运行
 ```bash
 pip3 install math random numpy psutil requests interval
-screen -r SimpleServerStatus
-python client.py
+python client.py &
 ```
-然后访问你的http://你的域名或IP/device.html就能看见设备了
+然后访问你的http://你的域名或IP/device.html 就能看见设备了
+ ### 客户端设置systemctl
+  终端输入：
+  ```bash
+  vim  /usr/lib/systemd/system/simpleserverstatus.service
+  ```
+  在文件中输入：
+  ```bash
+  [Unit]
+  Description=simpleserverstatus
+  After=network.target
+  [Service] 
+  Type=forking 
+  ExecStart=你的软件目录/python client.py
+  PrivateTmp=true
+  [Install]
+  WantedBy=multi-user.target
+  ```
+  保存退出后输入
+  ```bash
+  systemctl start simpleserverstatus.service
+  systemctl enable simpleserverstatus.service
+  ```
+  
