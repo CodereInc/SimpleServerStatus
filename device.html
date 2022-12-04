@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>探针</title>
+    </head>
+    <body>
+        <h1>探针</h1>
+        <iframe src="http://status.codereservice.top/viewer.php" id="Frame"width="100%"height="80%">
+        </iframe>
+        <script>
+                setInterval(
+                    function() {
+                        document.getElementById('Frame').contentWindow.location.reload(true);
+                    },3000);
+        </script>
+</html>
