@@ -1,4 +1,4 @@
-#SimpleServerStatus
+# SimpleServerStatus
 <a target="_blank" href="https://github.com/CodereInc/SimpleServerStatus"><img src="https://img.shields.io/github/stars/CodereInc/SimpleServerStatus" /></a> 
 <a target="_blank" href="https://github.com/CodereInc/SimpleServerStatus"><img src="https://img.shields.io/github/last-commit/CodereInc/SimpleServerStatus" /></a>
 <a target="_blank" href="https://github.com/CodereInc/SimpleServerStatus"><img src="https://img.shields.io/github/v/release/CodereInc/SimpleServerStatus" />
@@ -6,15 +6,15 @@
 [![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=State-of-the-art&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
 
 这是一个很简单的服务器探针，遵循GPLv3协议发行
-##如何使用？
-###服务端
+## 如何使用？
+### 服务端
 1.在服务端上安装nginx和php7.2,如果已经有的可以忽略
 ```bash
 git clone https://github.com/CodereInc/SimpleServerStatus.git
 
 ```
 然后将SimpleServerStatus目录下的所有文件复制到你的网站目录下，然后创建一个名为json的目录，然后编辑api.php,将第三行的YOUR_PASSWORD改成一个密码。
-###客户端
+### 客户端
 ```bash
 git clone https://github.com/CodereInc/SimpleServerStatus.git
 
